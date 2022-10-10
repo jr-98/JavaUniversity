@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx2.FXMLDocumentController">
+    <children>
+      <Button fx:id="btntriangulo" layoutX="226.0" layoutY="101.0" mnemonicParsing="false" onAction="#actionTri" prefHeight="31.0" prefWidth="147.0" text="Calcular Triangulo" textOverrun="CENTER_ELLIPSIS" />
+      <Label layoutX="20.0" layoutY="84.0" prefHeight="31.0" prefWidth="62.0" text="Base" />
+      <TextField fx:id="JTBase" layoutX="116.0" layoutY="84.0" prefHeight="31.0" prefWidth="79.0" visible="false">
+         <effect>
+            <Glow />
+         </effect></TextField>
+      <Label fx:id="flado2" layoutX="20.0" layoutY="131.0" prefHeight="31.0" prefWidth="62.0" text="Altura" />
+      <TextField fx:id="JTAltura" layoutX="116.0" layoutY="131.0" prefHeight="31.0" prefWidth="79.0" visible="false" />
+      <Label fx:id="flado11" layoutX="440.0" layoutY="51.0" prefHeight="31.0" prefWidth="70.0" text="Area" />
+      <Label fx:id="flado12" layoutX="585.0" layoutY="51.0" prefHeight="31.0" prefWidth="70.0" text="Perimetro" />
+      <Label fx:id="flado21" layoutX="26.0" layoutY="210.0" prefHeight="31.0" prefWidth="62.0" text="Lado" />
+      <TextField fx:id="JTLadoC" layoutX="116.0" layoutY="210.0" prefHeight="31.0" prefWidth="79.0" visible="false" />
+      <Button fx:id="btncuadrado" layoutX="226.0" layoutY="210.0" mnemonicParsing="false" onAction="#actionCU" prefHeight="31.0" prefWidth="147.0" text="Calcular Cuadrado" />
+      <ComboBox fx:id="Seleción" layoutX="242.0" layoutY="20.0" onAction="#comBxAction" prefWidth="150.0" />
+      <Label layoutX="76.0" layoutY="25.0" text="Seleccione una Figura" />
+      <Label layoutX="26.0" layoutY="280.0" text="Radio" />
+      <TextField fx:id="JTRadio" layoutX="116.0" layoutY="275.0" prefHeight="31.0" prefWidth="79.0" visible="false" />
+      <Button fx:id="BTCalcularCir" layoutX="226.0" layoutY="275.0" mnemonicParsing="false" onAction="#actionCir" prefHeight="31.0" prefWidth="147.0" text="Clacular Circulo" />
+      <TextField fx:id="JTAreaT" editable="false" layoutX="413.0" layoutY="100.0" prefHeight="31.0" prefWidth="97.0" />
+      <TextField fx:id="JTPerimetroT" editable="false" layoutX="572.0" layoutY="100.0" prefHeight="31.0" prefWidth="97.0" />
+      <TextField fx:id="JTAreaCu" editable="false" layoutX="413.0" layoutY="204.0" prefHeight="31.0" prefWidth="97.0" />
+      <TextField fx:id="JTPerimetroCu" editable="false" layoutX="571.0" layoutY="204.0" prefHeight="31.0" prefWidth="97.0" />
+      <TextField fx:id="JTAreaCir" editable="false" layoutX="413.0" layoutY="275.0" prefHeight="31.0" prefWidth="97.0" />
+      <TextField fx:id="JTPerimetroCir" editable="false" layoutX="571.0" layoutY="275.0" prefHeight="31.0" prefWidth="97.0" />
+      <Button fx:id="BTLimpiar" layoutX="510.0" layoutY="336.0" mnemonicParsing="false" onAction="#actionClear" text="Limpiar" textAlignment="CENTER" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="510.0" AnchorPane.rightAnchor="221.0" AnchorPane.topAnchor="336.0" />
+    </children>
+</AnchorPane>
